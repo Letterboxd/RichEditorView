@@ -112,6 +112,10 @@ RE.setFontSize = function(size) {
     RE.editor.style.fontSize = size;
 }
 
+RE.setFontColor = function(color) {
+    RE.editor.style.color = color;
+}
+
 RE.setBackgroundColor = function(color) {
     RE.body.style.backgroundColor = color;
 }

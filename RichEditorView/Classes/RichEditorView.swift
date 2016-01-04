@@ -231,6 +231,11 @@ extension RichEditorView {
         runJS("RE.setBackgroundColor('\(hex)');")
     }
     
+    public func setFontColor(color: UIColor) {
+        let hex = colorToHex(color)
+        runJS("RE.setFontColor('\(hex)');")
+    }
+    
     public func undo() {
         runJS("RE.undo();")
     }
