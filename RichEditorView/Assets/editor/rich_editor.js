@@ -23,6 +23,7 @@ var RE = {};
 RE.currentSelection;
 
 RE.editor = document.getElementById('editor');
+RE.body = document.getElementsByTagName('body')[0];
 
 // Not universally supported, but seems to work in iOS 7 and 8
 document.addEventListener("selectionchange", function() { RE.backuprange(); });
@@ -112,7 +113,7 @@ RE.setFontSize = function(size) {
 }
 
 RE.setBackgroundColor = function(color) {
-    RE.editor.style.backgroundColor = color;
+    RE.body.style.backgroundColor = color;
 }
 
 RE.setHeight = function(size) {
