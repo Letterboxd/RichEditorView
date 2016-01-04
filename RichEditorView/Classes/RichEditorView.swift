@@ -122,6 +122,18 @@ public class RichEditorView: UIView {
         }
     }
 
+    public func isItalic() -> Bool {
+        return (runJS("RE.isItalic();") as NSString).boolValue
+    }
+    
+    public func isBold() -> Bool {
+        return (runJS("RE.isBold();") as NSString).boolValue
+    }
+    
+    public func isBlockquote() -> Bool {
+        return (runJS("RE.isBlockquote();") as NSString).boolValue
+    }
+    
     // MARK: - Initialization
     
     public override init(frame: CGRect) {

@@ -206,6 +206,27 @@ RE.setJustifyRight = function() {
     document.execCommand('justifyRight', false, null);
 }
 
+RE.isItalic = function() {
+    return document.queryCommandState("Italic")
+}
+
+RE.isBold = function() {
+    return document.queryCommandState("Bold")
+}
+
+RE.isBlockquote = function() {
+    
+    var selection = window.getSelection();
+    if (selection.rangeCount > 0) {
+        var range = selection.getRangeAt(0)
+        var node = range.startContainer;
+		
+		return parentBlockquoteNode(node) != null;
+    }
+    
+    return false
+}
+
 RE.insertImage = function(url, alt) {
     var html = '<img src="' + url + '" alt="' + alt + '" />';
     RE.insertHTML(html);
