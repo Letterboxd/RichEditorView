@@ -222,7 +222,7 @@ extension RichEditorView {
         runJS("RE.removeFormat();")
     }
     
-    public func setFontSize(size: Int) {
+    public func setFontSize(size: CGFloat) {
         runJS("RE.setFontSize('\(size))px');")
     }
     
