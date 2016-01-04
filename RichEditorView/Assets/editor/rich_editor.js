@@ -257,6 +257,62 @@ function parentBlockquoteNode(x) {
     return null;
 }
 
+RE.editor.onkeydown = function(e) {
+    if (e.keyCode == 13) { /* enter key */
+        
+        var selection = window.getSelection();
+        if (selection.rangeCount > 0) {
+            var range = selection.getRangeAt(0)
+            var node = range.startContainer;
+            
+            var blockquote = parentBlockquoteNode(node);
+            
+            if (blockquote != null) {
+                
+                if (node.innerHTML === "<br>") {
+                    /* this is an empty line within a blockquote - break out of blockquote on return */
+                    
+                    document.execCommand('insertHTML', false, "<br>");
+                    document.execCommand('outdent', false, null);
+                } else {
+                    
+                    var hasPContainer = false;
+                    
+                    var n = node;
+                    do {
+                        if (n.nodeName === "BLOCKQUOTE") {
+                            break;
+                        } else if (n.nodeName === "P") {
+                            hasPContainer = true;
+                        }
+                    } while (n = n.parentElement);
+                    
+                    if (!hasPContainer) {
+                        /* put the blockquote content within a p */
+                        var htmlC = blockquote.innerHTML;
+                        blockquote.innerHTML = "<p>" + htmlC + "</p>";
+                    }
+                    
+                    /* create a new paragraph with a br in it */
+                    var p = document.createElement("p")
+                    
+                    blockquote.appendChild(p);
+                    
+                    var br = document.createElement("br")
+                    p.appendChild(br);
+                    
+                    range.collapse();
+                    range.setStartAfter(br)
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+                
+                return false
+            }
+        }
+    }
+}
+
 RE.insertHTML = function(html) {
     RE.restorerange();
     document.execCommand('insertHTML', false, html);
