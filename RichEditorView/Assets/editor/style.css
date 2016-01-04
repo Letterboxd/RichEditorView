@@ -29,6 +29,11 @@ body, h1, p {
     margin: 0;
 }
 
+body, font {
+    color: #9AB !important;
+    font-family: 'GraphikApp-Regular' !important;
+}
+
 #editor {
     -webkit-user-select: auto !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -47,8 +52,36 @@ body, h1, p {
 
 #editor {
     min-height: 100%;
-	font-family: 'HelveticaNeue';
-	color:#666666; 
+	font-family: 'GraphikApp-Regular' !important;
+	color:#666666;
 	line-height:28px; 
 	font-size: 12pt;
+}
+
+#editor i, #editor em {
+    font-family: 'GraphikApp-RegularItalic' !important;
+}
+
+#editor b, #editor strong {
+    font-family: 'GraphikApp-Semibold' !important;
+}
+
+#editor i b, #editor em b, #editor b i, #editor b em, #editor i strong, #editor em strong, #editor strong i, #editor strong em {
+    font-family: 'GraphikApp-SemiboldItalic' !important;
+}
+
+#editor u {
+    text-decoration: none;
+}
+
+#editor blockquote {
+    border-left: 1px solid #345;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+#editor a {
+    text-decoration: none;
+    color: #DEF !important;
+    font-family: 'GraphikApp-Regular' !important;
 }
