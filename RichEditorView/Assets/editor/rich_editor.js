@@ -212,8 +212,28 @@ RE.insertImage = function(url, alt) {
     RE.callback("input");
 }
 
-RE.setBlockquote = function() {
-    document.execCommand('formatBlock', false, '<blockquote>');
+RE.setBlockquote = function() {   
+    var selection = window.getSelection();
+    if (selection.rangeCount > 0) {
+        var node = selection.getRangeAt(0).startContainer;
+        
+        if (parentBlockquoteNode(node) != null) {
+            document.execCommand('outdent', false, null);
+        } else {
+            document.execCommand('formatBlock', false, '<blockquote>');
+        }
+    } else {
+        document.execCommand('formatBlock', false, '<blockquote>');
+    }
+}
+
+function parentBlockquoteNode(x) {
+    do {
+        if (x.nodeName === "BLOCKQUOTE") return x
+    }
+    while (x = x.parentElement);
+    
+    return null;
 }
 
 RE.insertHTML = function(html) {
