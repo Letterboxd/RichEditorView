@@ -120,6 +120,10 @@ RE.setBackgroundColor = function(color) {
     RE.body.style.backgroundColor = color;
 }
 
+RE.setEditorPadding = function(top, right, bottom, left) {
+    RE.editor.style.padding = top + "px " + right + "px " + bottom + "px " + left + "px";
+};
+
 RE.setHeight = function(size) {
     RE.editor.style.height = size;
 }

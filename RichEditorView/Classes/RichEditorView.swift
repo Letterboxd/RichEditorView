@@ -236,6 +236,10 @@ extension RichEditorView {
         runJS("RE.setFontColor('\(hex)');")
     }
     
+    public func setEditorPadding(insets: UIEdgeInsets) {
+        runJS("RE.setEditorPadding(\(insets.top),\(insets.right),\(insets.bottom),\(insets.left));")
+    }
+    
     public func undo() {
         runJS("RE.undo();")
     }
