@@ -362,6 +362,10 @@ RE.restorerange = function(){
     selection.addRange(range);
 }
 
+RE.getSelectedText = function(){
+    return document.getSelection().toString();
+}
+
 RE.focus = function() {
     var range = document.createRange();
     range.selectNodeContents(RE.editor);

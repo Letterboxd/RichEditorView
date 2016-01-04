@@ -225,6 +225,11 @@ extension RichEditorView {
         return runJS("RE.getText()")
     }
     
+    public func getSelectedText() -> String? {
+        let value = runJS("RE.getSelectedText();");
+        return value.isEmpty ? nil : value
+    }
+    
     public func setPlaceholderText(text: String) {
         placeholder = text
         runJS("RE.setPlaceholderText('\(escape(text))');")
