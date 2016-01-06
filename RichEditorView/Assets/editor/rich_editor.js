@@ -320,19 +320,20 @@ RE.insertHTML = function(html) {
 
 RE.insertLink = function(url, title) {
     RE.restorerange();
+    
     var sel = document.getSelection();
-    if (sel.toString().length != 0) {
-        if (sel.rangeCount) {
-
-            var el = document.createElement("a");
-            el.setAttribute("href", url);
-            el.setAttribute("title", title);
-
-            var range = sel.getRangeAt(0).cloneRange();
-            range.surroundContents(el);
-            sel.removeAllRanges();
-            sel.addRange(range);
-        }
+    if (sel.toString().length !== 0 && sel.rangeCount) {
+        var el = document.createElement("a");
+        el.setAttribute("href", url);
+        el.setAttribute("title", title);
+        
+        var range = sel.getRangeAt(0).cloneRange();
+        range.surroundContents(el);
+        sel.removeAllRanges();
+        sel.addRange(range);
+    } else {
+        var html = '<a href="' + url + '">' + title + '</a>';
+        RE.insertHTML(html);
     }
     RE.callback("input");
 }
