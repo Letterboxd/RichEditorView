@@ -134,6 +134,14 @@ public class RichEditorView: UIView {
         return (runJS("RE.isBlockquote();") as NSString).boolValue
     }
     
+    public func isUndoAvailable() -> Bool {
+        return (runJS("RE.isUndoAvailable();") as NSString).boolValue
+    }
+    
+    public func isRedoAvailable() -> Bool {
+        return (runJS("RE.isRedoAvailable();") as NSString).boolValue
+    }
+    
     // MARK: - Initialization
     
     public override init(frame: CGRect) {

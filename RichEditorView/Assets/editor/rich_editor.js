@@ -207,11 +207,11 @@ RE.setJustifyRight = function() {
 }
 
 RE.isItalic = function() {
-    return document.queryCommandState("Italic")
+    return document.queryCommandState("Italic");
 }
 
 RE.isBold = function() {
-    return document.queryCommandState("Bold")
+    return document.queryCommandState("Bold");
 }
 
 RE.isBlockquote = function() {
@@ -225,6 +225,14 @@ RE.isBlockquote = function() {
     }
     
     return false
+}
+
+RE.isUndoAvailable = function() {
+    return document.queryCommandEnabled('undo');
+}
+
+RE.isRedoAvailable = function() {
+    return document.queryCommandEnabled('redo');
 }
 
 RE.insertImage = function(url, alt) {
