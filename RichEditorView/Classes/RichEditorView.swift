@@ -391,7 +391,7 @@ extension RichEditorView: UIWebViewDelegate {
 
         // Handle pre-defined editor actions
         let callbackPrefix = "re-callback://"
-        if request.URL?.absoluteString.hasPrefix(callbackPrefix) == true {
+        if request.URL?.absoluteString?.hasPrefix(callbackPrefix) == true {
             
             // When we get a callback, we need to fetch the command queue to run the commands
             // It comes in as a JSON array of commands that we need to parse
