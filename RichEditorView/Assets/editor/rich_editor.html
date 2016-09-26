@@ -6,8 +6,31 @@
     <link rel="stylesheet" type="text/css" href="normalize.css"> 
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body><div id="editor" contentEditable="true" placeholder="" class="placeholder">
+<body><div id="editor" contentEditable="true" placeholder="" class="placeholder" onpaste="handlepaste(this, event)">
 </div>
 <script type="text/javascript" src="rich_editor.js"></script>
 </body>
 </html>
+
+<script>
+    
+    function iOSversion() {
+        if (/iP(hone|od|ad)/.test(navigator.platform)) {
+            // supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
+            var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+            return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+        }
+    }
+    
+    function handlepaste(el, e) {
+  
+        var ver = iOSversion()
+  
+        if (ver[0] >= 10) {
+            /* can use this sanitization trick on iOS 10 - on iOS 9 we just get a bunch of formatting garbage in the plain text representation so better to just paste the original crap in, styles and all */
+            document.execCommand('insertText', false, e.clipboardData.getData('text/plain'));
+            e.preventDefault();
+        }
+    }
+</script>
+    
