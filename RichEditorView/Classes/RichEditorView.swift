@@ -168,7 +168,7 @@ open class RichEditorView: UIView {
         webView.backgroundColor = UIColor.white
         
         webView.scrollView.isScrollEnabled = scrollEnabled
-        webView.scrollView.bounces = false
+        webView.scrollView.bounces = true
         webView.scrollView.delegate = self
         webView.scrollView.clipsToBounds = false
         
