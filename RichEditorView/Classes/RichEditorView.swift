@@ -220,6 +220,22 @@ private let DefaultInnerLineHeight: Int = 21
         })
     }
     
+    public func getSelectedText(handler: @escaping (String?) -> Void) {
+        hasRangeSelection { (hasRange) in
+            guard hasRange else {
+                handler(nil)
+                return
+            }
+            self.runJS("RE.getSelectedText()") { (result) in
+                if result == "" {
+                    handler(nil)
+                } else {
+                    handler(result)
+                }
+            }
+        }
+    }
+    
     /// Whether or not the selection has a type specifically of "Range".
     public func hasRangeSelection(handler: @escaping (Bool) -> Void) {
         runJS("RE.rangeSelectionExists()") { r in
@@ -252,16 +268,40 @@ private let DefaultInnerLineHeight: Int = 21
         runJS("RE.undo()")
     }
     
+    public func isUndoAvailable(handler: @escaping (Bool) -> Void) {
+        runJS("RE.isUndoAvailable()") { (result) in
+            handler((result as NSString).boolValue)
+        }
+    }
+    
     public func redo() {
         runJS("RE.redo()")
+    }
+    
+    public func isRedoAvailable(handler: @escaping (Bool) -> Void) {
+        runJS("RE.isRedoAvailable()") { (result) in
+            handler((result as NSString).boolValue)
+        }
     }
     
     public func bold() {
         runJS("RE.setBold()")
     }
     
+    public func isBold(handler: @escaping (Bool) -> Void) {
+        runJS("RE.isBold()") { (result) in
+            handler((result as NSString).boolValue)
+        }
+    }
+    
     public func italic() {
         runJS("RE.setItalic()")
+    }
+    
+    public func isItalic(handler: @escaping (Bool) -> Void) {
+        runJS("RE.isItalic()") { (result) in
+            handler((result as NSString).boolValue)
+        }
     }
     
     // "superscript" is a keyword
@@ -317,6 +357,12 @@ private let DefaultInnerLineHeight: Int = 21
     
     public func blockquote() {
         runJS("RE.setBlockquote()");
+    }
+    
+    public func isBlockquote(handler: @escaping (Bool) -> Void) {
+        runJS("RE.isBlockquote()") { (result) in
+            handler((result as NSString).boolValue)
+        }
     }
     
     public func alignLeft() {

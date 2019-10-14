@@ -238,9 +238,57 @@ RE.insertImage = function(url, alt) {
     RE.callback("input");
 };
 
-RE.setBlockquote = function() {
-    document.execCommand('formatBlock', false, '<blockquote>');
+RE.isItalic = function() {
+    return document.queryCommandState("Italic");
 };
+
+RE.isBold = function() {
+    return document.queryCommandState("Bold");
+};
+
+RE.isBlockquote = function() {
+    
+    var selection = window.getSelection();
+    if (selection.rangeCount > 0) {
+        var range = selection.getRangeAt(0)
+        var node = range.startContainer;
+        
+        return parentBlockquoteNode(node) != null;
+    }
+    
+    return false
+};
+
+RE.isUndoAvailable = function() {
+    return document.queryCommandEnabled('undo');
+};
+
+RE.isRedoAvailable = function() {
+    return document.queryCommandEnabled('redo');
+};
+
+RE.setBlockquote = function() {
+    var selection = window.getSelection();
+    if (selection.rangeCount > 0) {
+        var node = selection.getRangeAt(0).startContainer;
+        
+        if (parentBlockquoteNode(node) != null) {
+            document.execCommand('outdent', false, null);
+        } else {
+            document.execCommand('formatBlock', false, '<blockquote>');
+        }
+    } else {
+        document.execCommand('formatBlock', false, '<blockquote>');
+    }
+};
+
+function parentBlockquoteNode(x) {
+    do {
+        if (x.nodeName === "BLOCKQUOTE") return x
+            } while (x = x.parentElement);
+    
+    return null;
+}
 
 RE.insertHTML = function(html) {
     RE.restorerange();
@@ -250,20 +298,24 @@ RE.insertHTML = function(html) {
 RE.insertLink = function(url, title) {
     RE.restorerange();
     var sel = document.getSelection();
-    if (sel.toString().length !== 0) {
-        if (sel.rangeCount) {
-
-            var el = document.createElement("a");
-            el.setAttribute("href", url);
-            el.setAttribute("title", title);
-
-            var range = sel.getRangeAt(0).cloneRange();
-            range.surroundContents(el);
-            sel.removeAllRanges();
-            sel.addRange(range);
-        }
+    if (sel.toString().length !== 0 && sel.rangeCount) {
+        var el = document.createElement("a");
+        el.setAttribute("href", url);
+        el.setAttribute("title", title);
+        
+        var range = sel.getRangeAt(0).cloneRange();
+        range.surroundContents(el);
+        sel.removeAllRanges();
+        sel.addRange(range);
+    } else {
+        var html = '<a href="' + url + '">' + title + '</a>';
+        RE.insertHTML(html);
     }
     RE.callback("input");
+};
+
+RE.getSelectedText = function(){
+    return document.getSelection().toString();
 };
 
 RE.prepareInsert = function() {
@@ -413,6 +465,62 @@ RE.getRelativeCaretYPosition = function() {
     }
 
     return y;
+};
+
+RE.editor.onkeydown = function(e) {
+    if (e.keyCode == 13) { /* enter key */
+        
+        var selection = window.getSelection();
+        if (selection.rangeCount > 0) {
+            var range = selection.getRangeAt(0)
+            var node = range.startContainer;
+            
+            var blockquote = parentBlockquoteNode(node);
+            
+            if (blockquote != null) {
+                
+                if (node.innerHTML === "<br>") {
+                    /* this is an empty line within a blockquote - break out of blockquote on return */
+                    
+                    document.execCommand('insertHTML', false, "<br>");
+                    document.execCommand('outdent', false, null);
+                } else {
+                    
+                    var hasPContainer = false;
+                    
+                    var n = node;
+                    do {
+                        if (n.nodeName === "BLOCKQUOTE") {
+                            break;
+                        } else if (n.nodeName === "P") {
+                            hasPContainer = true;
+                        }
+                    } while (n = n.parentElement);
+                    
+                    if (!hasPContainer) {
+                        /* put the blockquote content within a p */
+                        var htmlC = blockquote.innerHTML;
+                        blockquote.innerHTML = "<p>" + htmlC + "</p>";
+                    }
+                    
+                    /* create a new paragraph with a br in it */
+                    var p = document.createElement("p")
+                    
+                    blockquote.appendChild(p);
+                    
+                    var br = document.createElement("br")
+                    p.appendChild(br);
+                    
+                    range.collapse();
+                    range.setStartAfter(br)
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+                
+                return false
+            }
+        }
+    }
 };
 
 window.onload = function() {

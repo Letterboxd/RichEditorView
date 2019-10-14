@@ -47,6 +47,10 @@ body {
     overflow: auto;
     display: table-cell;
     height: 100%;
+    font-family: 'GraphikApp-Regular';
+    color: #9AB;
+    padding: 10px 16px 10px 16px;
+    background-color: #181C20;
 }
 
 #editor:focus {
@@ -63,3 +67,32 @@ body {
 h1, p, ul, ol {
     margin: 0;
 }
+
+#editor i, #editor em {
+    font-family: 'GraphikApp-RegularItalic' !important;
+}
+
+#editor b, #editor strong {
+    font-family: 'GraphikApp-Semibold' !important;
+}
+
+#editor i b, #editor em b, #editor b i, #editor b em, #editor i strong, #editor em strong, #editor strong i, #editor strong em {
+    font-family: 'GraphikApp-SemiboldItalic' !important;
+}
+
+#editor u {
+    text-decoration: none;
+}
+
+#editor blockquote {
+    border-left: 1px solid #345;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+#editor a {
+    text-decoration: none;
+    color: #DEF !important;
+    font-family: 'GraphikApp-Regular' !important;
+}
+
