@@ -70,17 +70,20 @@ h1, p, ul, ol {
 
 #editor i, #editor em {
     font-family: 'GraphikApp-RegularItalic' !important;
-    font-style: unset;
+    font-style: normal;
+    font-weight: normal;
 }
 
 #editor b, #editor strong {
     font-family: 'GraphikApp-Semibold' !important;
-    font-style: unset;
+    font-style: normal;
+    font-weight: normal;
 }
 
 #editor i b, #editor em b, #editor b i, #editor b em, #editor i strong, #editor em strong, #editor strong i, #editor strong em {
     font-family: 'GraphikApp-SemiboldItalic' !important;
-    font-style: unset;
+    font-style: normal;
+    font-weight: normal;
 }
 
 #editor u {
@@ -97,5 +100,18 @@ h1, p, ul, ol {
     text-decoration: none;
     color: #DEF !important;
     font-family: 'GraphikApp-Regular' !important;
+    font-style: normal;
+    font-weight: normal;
 }
 
+#editor b a, #editor strong a {
+    font-family: 'GraphikApp-Semibold' !important;
+}
+
+#editor i a, #editor em a {
+    font-family: 'GraphikApp-RegularItalic' !important;
+}
+
+#editor i b a, #editor em b a, #editor b i a, #editor b em a, #editor i strong a, #editor em strong a, #editor strong i a, #editor strong em a {
+    font-family: 'GraphikApp-SemiboldItalic' !important;
+}
