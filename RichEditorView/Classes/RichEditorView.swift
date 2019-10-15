@@ -144,8 +144,8 @@ private let DefaultInnerLineHeight: Int = 21
         addSubview(webView)
         
         if let filePath = Bundle(for: RichEditorView.self).path(forResource: "rich_editor", ofType: "html") {
-            let url = URL(fileURLWithPath: filePath, isDirectory: false)
-            let readURL = URL(fileURLWithPath: Bundle.main.bundlePath, isDirectory: true)
+            let url = URL(fileURLWithPath: filePath, isDirectory: false).standardizedFileURL
+            let readURL = URL(fileURLWithPath: Bundle.main.bundlePath, isDirectory: true).standardizedFileURL
             webView.loadFileURL(url, allowingReadAccessTo: readURL)
         }
     }
