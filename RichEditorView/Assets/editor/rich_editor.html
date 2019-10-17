@@ -7,22 +7,30 @@
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <style>
             @font-face {
-                font-family: 'GraphikApp-Regular';
+                font-family: 'GraphikApp';
+                font-weight: normal;
+                font-style: normal;
                 src: local('GraphikApp-Regular'),url('../../Graphik-Regular-App.ttf') format('truetype');
             }
-        @font-face {
-            font-family: 'GraphikApp-RegularItalic';
-            src: local('GraphikApp-RegularItalic'),url('../../Graphik-RegularItalic-App.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: 'GraphikApp-Semibold';
-            src: local('GraphikApp-Semibold'),url('../../Graphik-Semibold-App.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: 'GraphikApp-SemiboldItalic';
-            src: local('GraphikApp-SemiboldItalic'),url('../../Graphik-SemiboldItalic-App.ttf') format('truetype');
-        }
-            </style>
+            @font-face {
+                font-family: 'GraphikApp';
+                font-weight: normal;
+                font-style: italic;
+                src: local('GraphikApp-RegularItalic'),url('../../Graphik-RegularItalic-App.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'GraphikApp';
+                font-weight: bold;
+                font-style: normal;
+                src: local('GraphikApp-Semibold'),url('../../Graphik-Semibold-App.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'GraphikApp';
+                font-weight: bold;
+                font-style: italic;
+                src: local('GraphikApp-SemiboldItalic'),url('../../Graphik-SemiboldItalic-App.ttf') format('truetype');
+            }
+        </style>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     
@@ -31,6 +39,7 @@
             <div id="editor" contentEditable="true" placeholder="" class="placeholder" onpaste="handlepaste(this, event)"></div>
         </div>
         
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="rich_editor.js"></script>
     </body>
 </html>

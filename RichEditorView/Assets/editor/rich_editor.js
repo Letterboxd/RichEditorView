@@ -304,12 +304,26 @@ RE.insertLink = function(url, title) {
         el.setAttribute("title", title);
         
         var range = sel.getRangeAt(0).cloneRange();
-        range.surroundContents(el);
-        sel.removeAllRanges();
-        sel.addRange(range);
+        
+        if ($(range.startContainer).parents('a[href]').length > 0) {
+            // We are already in a url, just change the link to match if there is a link otherwise clear it
+            if (url.length > 0) {
+                $(range.startContainer).parents('a[href]').attr("href", url)
+            } else {
+                $(range.startContainer).parents('a[href]').contents().unwrap()
+            }
+        } else {
+            if (url.length > 0) {
+                range.surroundContents(el);
+                sel.removeAllRanges();
+                sel.addRange(range);
+            }
+        }
     } else {
-        var html = '<a href="' + url + '">' + title + '</a>';
-        RE.insertHTML(html);
+        if (url.length > 0) {
+            var html = '<a href="' + url + '">' + title + '</a>';
+            RE.insertHTML(html);
+        }
     }
     RE.callback("input");
 };
@@ -436,7 +450,11 @@ RE.getSelectedHref = function() {
         href = tags[0];
     } else {
         var node = _findNodeByNameInContainer(sel.anchorNode.parentElement, 'A', 'editor');
-        href = node.href;
+        if (node != undefined) {
+            href = node.href;
+        } else {
+            return null;
+        }
     }
 
     return href ? href : null;
@@ -526,3 +544,83 @@ RE.editor.onkeydown = function(e) {
 window.onload = function() {
     RE.callback("ready");
 };
+
+function getSelectedNodes() {
+    // from https://developer.mozilla.org/en-US/docs/Web/API/Selection
+    var selection = window.getSelection();
+    if (selection.isCollapsed) {
+        return [];
+    };
+    var node1 = selection.anchorNode;
+    var node2 = selection.focusNode;
+    var selectionAncestor = get_common_ancestor(node1, node2);
+    if (selectionAncestor == null) {
+        return [];
+    }
+    return getNodesBetween(selectionAncestor, node1, node2);
+}
+
+function get_common_ancestor(a, b)
+{
+    // from http://stackoverflow.com/questions/3960843/how-to-find-the-nearest-common-ancestors-of-two-or-more-nodes
+    var parentsa = $(a).parents();
+    var parentsb = $(b).parents();
+    
+    var found = null;
+    
+    parentsa.each(function() {
+                   var thisa = this;
+                   
+                   parentsb.each(function() {
+                                  if (thisa == this)
+                                  {
+                                  found = this;
+                                  return false;
+                                  }
+                                  });
+                   
+                   if (found) return false;
+                   });
+    
+    return found;
+}
+
+function isDescendant(parent, child) {
+    // from http://stackoverflow.com/questions/2234979/how-to-check-in-javascript-if-one-element-is-a-child-of-another
+    var node = child;
+    while (node != null) {
+        if (node == parent) {
+            return true;
+        }
+        node = node.parentNode;
+    }
+    return false;
+}
+
+function getNodesBetween(rootNode, node1, node2) {
+    var resultNodes = [];
+    var isBetweenNodes = false;
+    for (var i = 0; i < rootNode.childNodes.length; i+= 1) {
+        if (isDescendant(rootNode.childNodes[i], node1) || isDescendant(rootNode.childNodes[i], node2)) {
+            if (resultNodes.length == 0) {
+                isBetweenNodes = true;
+            } else {
+                isBetweenNodes = false;
+            }
+            resultNodes.push(rootNode.childNodes[i]);
+        } else if (resultNodes.length == 0) {
+        } else if (isBetweenNodes) {
+            resultNodes.push(rootNode.childNodes[i]);
+        } else {
+            return resultNodes;
+        }
+    };
+    if (resultNodes.length == 0) {
+        return [rootNode];
+    } else if (isDescendant(resultNodes[resultNodes.length - 1], node1) || isDescendant(resultNodes[resultNodes.length - 1], node2)) {
+        return resultNodes;
+    } else {
+        // same child node for both should never happen
+        return [resultNodes[0]];
+    }
+}
