@@ -381,6 +381,7 @@ RE.focus = function() {
     var selection = window.getSelection();
     selection.removeAllRanges();
     selection.addRange(range);
+    RE.editor.blur();
     RE.editor.focus();
 };
 

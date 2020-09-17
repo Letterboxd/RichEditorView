@@ -7,408 +7,396 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12BEE72D3E6BB68CB8CE6A1D06EB890F /* RichEditorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C413BE092D5FF39E49AE6FD1CDA1887A /* RichEditorView-dummy.m */; };
-		16F181AB7A5C68DDA7DA92737A8CBFD7 /* rich_editor_tests.html in Resources */ = {isa = PBXBuildFile; fileRef = 97D54D958A814B84BAD4939B8F572726 /* rich_editor_tests.html */; };
-		1A33A5AE233198A2001CE62D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33A5AC233198A2001CE62D /* String+Extensions.swift */; };
-		1A33A5AF233198A2001CE62D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33A5AD233198A2001CE62D /* UIColor+Extensions.swift */; };
-		1A80152722EE279B007F4972 /* h2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014E722EE279B007F4972 /* h2@2x.png */; };
-		1A80152922EE279B007F4972 /* text_color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014E922EE279B007F4972 /* text_color@2x.png */; };
-		1A80152C22EE279B007F4972 /* indent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014EC22EE279B007F4972 /* indent@3x.png */; };
-		1A80152D22EE279B007F4972 /* unordered_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014ED22EE279B007F4972 /* unordered_list@3x.png */; };
-		1A80152F22EE279B007F4972 /* unordered_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014EF22EE279B007F4972 /* unordered_list@2x.png */; };
-		1A80153022EE279B007F4972 /* indent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014F022EE279B007F4972 /* indent@2x.png */; };
-		1A80153122EE279B007F4972 /* justify_center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014F122EE279B007F4972 /* justify_center@2x.png */; };
-		1A80153322EE279B007F4972 /* ordered_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014F322EE279B007F4972 /* ordered_list@2x.png */; };
-		1A80153522EE279B007F4972 /* underline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014F522EE279B007F4972 /* underline@2x.png */; };
-		1A80153722EE279B007F4972 /* h4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014F722EE279B007F4972 /* h4@2x.png */; };
-		1A80153922EE279B007F4972 /* h6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014F922EE279B007F4972 /* h6@2x.png */; };
-		1A80153A22EE279B007F4972 /* justify_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014FA22EE279B007F4972 /* justify_right@2x.png */; };
-		1A80153C22EE279B007F4972 /* underline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014FC22EE279B007F4972 /* underline@3x.png */; };
-		1A80153D22EE279B007F4972 /* ordered_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8014FD22EE279B007F4972 /* ordered_list@3x.png */; };
-		1A80154022EE279B007F4972 /* outdent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150022EE279B007F4972 /* outdent@2x.png */; };
-		1A80154122EE279B007F4972 /* superscript@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150122EE279B007F4972 /* superscript@2x.png */; };
-		1A80154422EE279B007F4972 /* strikethrough@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150422EE279B007F4972 /* strikethrough@2x.png */; };
-		1A80154522EE279B007F4972 /* undo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150522EE279B007F4972 /* undo@3x.png */; };
-		1A80154622EE279B007F4972 /* h3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150622EE279B007F4972 /* h3@2x.png */; };
-		1A80154822EE279B007F4972 /* undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150822EE279B007F4972 /* undo@2x.png */; };
-		1A80154922EE279B007F4972 /* h1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150922EE279B007F4972 /* h1@2x.png */; };
-		1A80154F22EE279B007F4972 /* outdent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80150F22EE279B007F4972 /* outdent@3x.png */; };
-		1A80155122EE279B007F4972 /* insert_link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151122EE279B007F4972 /* insert_link@2x.png */; };
-		1A80155222EE279B007F4972 /* bold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151222EE279B007F4972 /* bold@2x.png */; };
-		1A80155322EE279B007F4972 /* italic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151322EE279B007F4972 /* italic@2x.png */; };
-		1A80155522EE279B007F4972 /* h5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151522EE279B007F4972 /* h5@2x.png */; };
-		1A80155622EE279B007F4972 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151622EE279B007F4972 /* clear@2x.png */; };
-		1A80155722EE279B007F4972 /* subscript@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151722EE279B007F4972 /* subscript@2x.png */; };
-		1A80155922EE279B007F4972 /* redo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151922EE279B007F4972 /* redo@2x.png */; };
-		1A80155D22EE279B007F4972 /* redo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151D22EE279B007F4972 /* redo@3x.png */; };
-		1A80155F22EE279B007F4972 /* insert_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80151F22EE279B007F4972 /* insert_image@2x.png */; };
-		1A80156322EE279B007F4972 /* justify_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80152322EE279B007F4972 /* justify_left@2x.png */; };
-		1A80156422EE279B007F4972 /* italic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80152422EE279B007F4972 /* italic@3x.png */; };
-		1A80156522EE279B007F4972 /* bold@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80152522EE279B007F4972 /* bold@3x.png */; };
-		1A80156622EE279B007F4972 /* bg_color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A80152622EE279B007F4972 /* bg_color@2x.png */; };
-		1AB6F5842332E2AF006B3B5A /* RichEditorWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6F5832332E2AF006B3B5A /* RichEditorWebView.swift */; };
-		23F68208CB1C9A9BE563BF2C8D08BADD /* rich_editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 4E5A788970235FE88C7F22A294C6DE46 /* rich_editor.js */; };
-		339A87EF9A671044103479E863C9BCA4 /* Pods-RichEditorViewSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980878382C0AB691C47F03DA0538E4D /* Pods-RichEditorViewSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37148EBAB00B766E4E8AB133C892DF9E /* RichEditorOptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF940A98392AFFE8D547FE96426589E /* RichEditorOptionItem.swift */; };
-		5E10E7887C89C8C74D8CC543CA49E94D /* rich_editor_tests.js in Resources */ = {isa = PBXBuildFile; fileRef = F9438F93E36EE7C41FD690F3973D4A5F /* rich_editor_tests.js */; };
-		697F6554216863B6A68300EB0D4B0967 /* RichEditorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9824AD75466EA117C9BB4360D617E673 /* RichEditorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D1F115DB33527DB48F603CCBCFAC455 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = 66DBAD0EAA771B04B515027F4AF5DE45 /* normalize.css */; };
-		9B30BD21D0DF4E26B0559D2C8BFE466D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D422F2D59CE220D1E2262803C7EB6E3 /* style.css */; };
-		A1ABA61DE88300B7A44798DBBD683204 /* Pods-RichEditorViewSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2D76AA52B0CEECB7CC0FD2BD3A1031 /* Pods-RichEditorViewSample-dummy.m */; };
-		B88913C5DC69852D045CF3EE8F082B2B /* rich_editor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5BD5F71B6EB7B220E1E3091C6CF9AFA8 /* rich_editor.html */; };
-		B8E2A31D811C5E258A648D645F64119B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C6803119154B5721FC180F370AEBF8E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		DFDCC66FFB49038B4917D943688E99AB /* RichEditorToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6966C9318E4C7C1E71356BDC0B56D /* RichEditorToolbar.swift */; };
-		F6801716E905983548B8BBB30959734B /* assert.js in Resources */ = {isa = PBXBuildFile; fileRef = F3D02F37081A9CE9748C6887B5051585 /* assert.js */; };
-		F82EB72A0BBBE1DB9AC3D63E700F06F4 /* RichEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962438433603F37F4226134FB32AD85 /* RichEditorView.swift */; };
+		05B0422F58D214BE046EEEF4A2249EFA /* underline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D329CAD429DA61BBC6938B55AE4168DA /* underline@2x.png */; };
+		0AFF561A5D4CEA74A69D67A979C1BDB5 /* subscript@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E2AE3D8BC1C3D922C8290B078BC8AD /* subscript@2x.png */; };
+		15E26EF4C5320B4EFF3EEF8D1F7860D2 /* RichEditorWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1402503CB776ED0FE866BA75BBA67B /* RichEditorWebView.swift */; };
+		1A385BA37B0AC12EDEC4D46237513EFD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240E9483D0D2C79B1BEEFC4635969EF /* UIColor+Extensions.swift */; };
+		24CC1CE2661A42E5914835E3B35AAE00 /* bold@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0E80F178B15DD0C611FB2DDDA654A1 /* bold@3x.png */; };
+		2746E5732C89CC6D259C80AFFF61131C /* assert.js in Resources */ = {isa = PBXBuildFile; fileRef = DD0A63FCAFEADDFB394E0E659E792DDD /* assert.js */; };
+		2B75989A59C23C16C3D6FD253B30FB7E /* ordered_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554E8C3D767502D2931BCCADA062A453 /* ordered_list@3x.png */; };
+		2C02FBE30E5BB6CA6E8DD6B7483D227F /* RichEditorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8778D85BD1E4F4FB53267000F726C878 /* RichEditorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CACAF15CBC4A2EE352F608023ABA1C3 /* rich_editor_tests.js in Resources */ = {isa = PBXBuildFile; fileRef = 00A5E5A68B1E86FB40716498DBD4CB75 /* rich_editor_tests.js */; };
+		30400790E8CEF3B1E9D09B63E7BF52CA /* rich_editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 1AEEA4688C5BF70BA78102C6E848301F /* rich_editor.js */; };
+		349480CDCCDCBA338A8B697F7670B17D /* RichEditorToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E786561A8631B2592FDD3E0A41634631 /* RichEditorToolbar.swift */; };
+		37D16100F3EB31687FF0867C6B786BCA /* text_color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F391EABECB914614E0A4A3DDBFD1BA /* text_color@2x.png */; };
+		3CEACD5A8F22A692FC35E09B18C91AF0 /* justify_center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1340FE0D8BE00C5EC515B7FC6FE2C6F /* justify_center@2x.png */; };
+		41CDD7DD9A7BFE37813B1DCE91034837 /* bg_color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E170EB3A87FE4B87669140ABB8C4D95 /* bg_color@2x.png */; };
+		44652639BF737B8DF859836ABF5C5703 /* Pods-RichEditorViewSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 646C8743306C4559E0829D66DB6027A0 /* Pods-RichEditorViewSample-dummy.m */; };
+		4506DBB859C39AD5BBD5DD7493D858A8 /* RichEditorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1876E3DF9278DF90BB173A1DAEC5E82 /* RichEditorView-dummy.m */; };
+		458D0F078DC61DA90CD90766ED46C5D9 /* h2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A198E9FF758D0E23B55EF874F45993 /* h2@2x.png */; };
+		462B6E360141450DFE9D7EB2A88682FA /* h6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4210CF713B5BB929C7015ECB7612118D /* h6@2x.png */; };
+		46D76164D56793A1A1D758AB2F7AF444 /* rich_editor.html in Resources */ = {isa = PBXBuildFile; fileRef = C5774BEFD01036D9DE0A2706276C950A /* rich_editor.html */; };
+		476B68A6C5F97E804D1033BBC1C385CC /* indent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40F8BBDDEE7E09B32712564493BB258 /* indent@3x.png */; };
+		4B2D027D17C3E13310C1057A08CA389A /* undo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8A478AB6C7FAF56C8DD155B62CF268 /* undo@3x.png */; };
+		4D6A16E5C4D7F55788F233E4FE4E2EFE /* outdent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677A70F3EA183F48FCA432002B4A90EC /* outdent@3x.png */; };
+		54C529229B8C775FFFB6EF271137524D /* indent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F368E4A7B98A0A1DED8860ED28AE9AD /* indent@2x.png */; };
+		56387873BB86A953570419A4200CF83B /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB601F5D46BE51AEFF2DE67E52D86EC3 /* clear@2x.png */; };
+		56E9C15F3CD99427CC7C49878F20ECAD /* RichEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CA238F5E8DEFE009FEF25A0C7ED29 /* RichEditorView.swift */; };
+		6869A8EF9F940FFEE301408695939CF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6AC1267691191F682528A02D9CFCDFF5 /* ordered_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F256A237F3FC1955ABCFD10481867FD /* ordered_list@2x.png */; };
+		71877F7B83AF7239D6C7A2B8E7F12AA5 /* h5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6E9FE596E1DDDBDFD2D9EC7D7A00BAD /* h5@2x.png */; };
+		7514778F18EE109B9031C88245A4CE82 /* bold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AD5A8E59A5A06DBA2E912F691E8994 /* bold@2x.png */; };
+		77AEBC7E09950A10A4292B45EDD43D74 /* underline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE31D22D2C383E8BBED145CF2E3F5C7 /* underline@3x.png */; };
+		790A124EC6539A9415956EC51949CF9C /* unordered_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BDA438BADB341EBC5F43CB0DB3B680 /* unordered_list@2x.png */; };
+		80C5ADE6C4F6B4D95F9777AC620C0797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8924EF4A33FD5061F68DF4E96F9B2E5C /* unordered_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B728EC3ACEF87AB56A446C7A9DC189 /* unordered_list@3x.png */; };
+		8A5EDA5ADD70288C075C7243F8267089 /* justify_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F38579B67EBDB349E1541AB6903F2890 /* justify_right@2x.png */; };
+		8E97FB5A9C5EFD23E767A18ACD7D5EF6 /* strikethrough@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCEFA2ADBB3BBF682D535397CEF900 /* strikethrough@2x.png */; };
+		99BC15A8FF4BCEC64D460B798683089F /* jquery-3.4.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 56EC8BDD99F9CFB3F5AD56083735533E /* jquery-3.4.1.min.js */; };
+		A47703D0EB3C7134C30AB54F30D4FB1A /* superscript@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C97B78A44E7D95256DA443EA202A62C /* superscript@2x.png */; };
+		A745EAD8EE29A1BAAB7B866A75813DE3 /* insert_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2397A9649EC66EAE98D284D9BCB4FC2A /* insert_image@2x.png */; };
+		A80EC1B220E72ED4492779349BE8F75D /* italic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8828FAC9F3B8AB4A9F7440032B371DC2 /* italic@3x.png */; };
+		B12853913E0B64C249FC3C54D0944080 /* outdent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE97BCA56366F1F38CB9FC409AAE713 /* outdent@2x.png */; };
+		B34747FA091F2ED6695D1FBC6EC3CFD7 /* justify_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6965B897A8BA0AC836C4C89FC0CEEBCA /* justify_left@2x.png */; };
+		BDE6101B398E4DE514ECE9B0F08761E8 /* h1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AC9AAE14B4B17DFF5F33CC17FF3D4 /* h1@2x.png */; };
+		C66B4F0780524DFAC9E3E7817A57B781 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2E4E4F237188579954A03E8F38338 /* String+Extensions.swift */; };
+		C88A3CE89A6B174E0D37DDC08B35EED8 /* undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9450C0B269E8296D2FE2EB4D28D50F5 /* undo@2x.png */; };
+		CD396DE0E38A657BF2BB2FA7A8C0ABAF /* redo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6EAE5F45396C520DF2B3B348CA9565 /* redo@3x.png */; };
+		CDF65093C3C7CD8A15A237AF547C33F0 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = C4047681C767292FB9629733F63DDCE6 /* normalize.css */; };
+		DE6936CE57C8DE11883FE9B020C2778F /* h4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D76C3E9B9BFFAB2C57A844FA9827497 /* h4@2x.png */; };
+		DEBB106DCCBD2E5D72B3B5FCC7164427 /* italic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49851E6AAEC64FE24E7126541FD9F73D /* italic@2x.png */; };
+		E6C1508F04C714C7CF7D88B8EE5F3F3F /* Pods-RichEditorViewSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A19DC18C6D9953EED3AA7F6B835677B0 /* Pods-RichEditorViewSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8E40A24AA65F1D655D2432710EFD5B0 /* h3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 963C6804A37CBEB7F401EB9F207E1B46 /* h3@2x.png */; };
+		EDF05D89611F21BFC046B32B84B793D2 /* rich_editor_tests.html in Resources */ = {isa = PBXBuildFile; fileRef = 743990123A5BE6FD65196E8B909DC0A0 /* rich_editor_tests.html */; };
+		EE6D966307C1E93FEEA535C3A2D59E6D /* RichEditorOptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217D8B1CBAADCC3258FE5A59B0E20BA7 /* RichEditorOptionItem.swift */; };
+		F667B6568D7D78EA3BA914D74F974442 /* redo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5A20F0756F583D3DBC91DA786177EF /* redo@2x.png */; };
+		F74657554B649A9D3C8628FB6B7CB884 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = D2B9BCE89C1AFF469C8D3883DC1090D8 /* style.css */; };
+		FA0C9D91B4A68803C6D932C00DDDC6A8 /* insert_link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1396077DF956F7350406E44B2FFBEC1A /* insert_link@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9D7D135CF589DFF68FE0B7A528A80279 /* PBXContainerItemProxy */ = {
+		BACE1CB2B7DE2EB0A62CC24E65E677D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 931355B053CE64160C15150C4B4AD823;
+			remoteGlobalIDString = EE1675A9CD3D9AB59F10128C452292F9;
 			remoteInfo = RichEditorView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1271E747F5D9EEB8266B0E0F0D8285E6 /* Pods_RichEditorViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichEditorViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13C70F08F9A188217D25A786931C6B4F /* Pods-RichEditorViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RichEditorViewSample.release.xcconfig"; sourceTree = "<group>"; };
-		14E29C85382435C544E1049690507DA2 /* Pods-RichEditorViewSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RichEditorViewSample.modulemap"; sourceTree = "<group>"; };
-		1A33A5AC233198A2001CE62D /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		1A33A5AD233198A2001CE62D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		1A8014E722EE279B007F4972 /* h2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h2@2x.png"; sourceTree = "<group>"; };
-		1A8014E922EE279B007F4972 /* text_color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text_color@2x.png"; sourceTree = "<group>"; };
-		1A8014EC22EE279B007F4972 /* indent@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indent@3x.png"; sourceTree = "<group>"; };
-		1A8014ED22EE279B007F4972 /* unordered_list@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unordered_list@3x.png"; sourceTree = "<group>"; };
-		1A8014EF22EE279B007F4972 /* unordered_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unordered_list@2x.png"; sourceTree = "<group>"; };
-		1A8014F022EE279B007F4972 /* indent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indent@2x.png"; sourceTree = "<group>"; };
-		1A8014F122EE279B007F4972 /* justify_center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "justify_center@2x.png"; sourceTree = "<group>"; };
-		1A8014F322EE279B007F4972 /* ordered_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ordered_list@2x.png"; sourceTree = "<group>"; };
-		1A8014F522EE279B007F4972 /* underline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "underline@2x.png"; sourceTree = "<group>"; };
-		1A8014F722EE279B007F4972 /* h4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h4@2x.png"; sourceTree = "<group>"; };
-		1A8014F922EE279B007F4972 /* h6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h6@2x.png"; sourceTree = "<group>"; };
-		1A8014FA22EE279B007F4972 /* justify_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "justify_right@2x.png"; sourceTree = "<group>"; };
-		1A8014FC22EE279B007F4972 /* underline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "underline@3x.png"; sourceTree = "<group>"; };
-		1A8014FD22EE279B007F4972 /* ordered_list@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ordered_list@3x.png"; sourceTree = "<group>"; };
-		1A80150022EE279B007F4972 /* outdent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outdent@2x.png"; sourceTree = "<group>"; };
-		1A80150122EE279B007F4972 /* superscript@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superscript@2x.png"; sourceTree = "<group>"; };
-		1A80150422EE279B007F4972 /* strikethrough@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strikethrough@2x.png"; sourceTree = "<group>"; };
-		1A80150522EE279B007F4972 /* undo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo@3x.png"; sourceTree = "<group>"; };
-		1A80150622EE279B007F4972 /* h3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h3@2x.png"; sourceTree = "<group>"; };
-		1A80150822EE279B007F4972 /* undo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo@2x.png"; sourceTree = "<group>"; };
-		1A80150922EE279B007F4972 /* h1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h1@2x.png"; sourceTree = "<group>"; };
-		1A80150F22EE279B007F4972 /* outdent@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outdent@3x.png"; sourceTree = "<group>"; };
-		1A80151122EE279B007F4972 /* insert_link@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "insert_link@2x.png"; sourceTree = "<group>"; };
-		1A80151222EE279B007F4972 /* bold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bold@2x.png"; sourceTree = "<group>"; };
-		1A80151322EE279B007F4972 /* italic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italic@2x.png"; sourceTree = "<group>"; };
-		1A80151522EE279B007F4972 /* h5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h5@2x.png"; sourceTree = "<group>"; };
-		1A80151622EE279B007F4972 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
-		1A80151722EE279B007F4972 /* subscript@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subscript@2x.png"; sourceTree = "<group>"; };
-		1A80151922EE279B007F4972 /* redo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo@2x.png"; sourceTree = "<group>"; };
-		1A80151D22EE279B007F4972 /* redo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo@3x.png"; sourceTree = "<group>"; };
-		1A80151F22EE279B007F4972 /* insert_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "insert_image@2x.png"; sourceTree = "<group>"; };
-		1A80152322EE279B007F4972 /* justify_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "justify_left@2x.png"; sourceTree = "<group>"; };
-		1A80152422EE279B007F4972 /* italic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italic@3x.png"; sourceTree = "<group>"; };
-		1A80152522EE279B007F4972 /* bold@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bold@3x.png"; sourceTree = "<group>"; };
-		1A80152622EE279B007F4972 /* bg_color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_color@2x.png"; sourceTree = "<group>"; };
-		1AB6F5832332E2AF006B3B5A /* RichEditorWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorWebView.swift; sourceTree = "<group>"; };
-		4B2D2A1D90EF5849022855FEE8A8621A /* Pods-RichEditorViewSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RichEditorViewSample-frameworks.sh"; sourceTree = "<group>"; };
-		4C10094719178C91E5D2BD8A5D180278 /* RichEditorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RichEditorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E5A788970235FE88C7F22A294C6DE46 /* rich_editor.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; path = rich_editor.js; sourceTree = "<group>"; };
-		503B0ABD7C7194C1ACAD37E972CEBCC7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BD5F71B6EB7B220E1E3091C6CF9AFA8 /* rich_editor.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; path = rich_editor.html; sourceTree = "<group>"; };
-		66DBAD0EAA771B04B515027F4AF5DE45 /* normalize.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; path = normalize.css; sourceTree = "<group>"; };
-		685BFF7DBF86353957CA0455A32ED344 /* RichEditorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RichEditorView.modulemap; sourceTree = "<group>"; };
-		6D422F2D59CE220D1E2262803C7EB6E3 /* style.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		7980878382C0AB691C47F03DA0538E4D /* Pods-RichEditorViewSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RichEditorViewSample-umbrella.h"; sourceTree = "<group>"; };
-		80ED049A146E6C22954326F460DC4553 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97D54D958A814B84BAD4939B8F572726 /* rich_editor_tests.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; path = rich_editor_tests.html; sourceTree = "<group>"; };
-		9824AD75466EA117C9BB4360D617E673 /* RichEditorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RichEditorView-umbrella.h"; sourceTree = "<group>"; };
-		A47AE720DEE71EF39FFF2F9A1B82195F /* RichEditorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RichEditorView-prefix.pch"; sourceTree = "<group>"; };
-		A962438433603F37F4226134FB32AD85 /* RichEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RichEditorView.swift; sourceTree = "<group>"; };
-		C413BE092D5FF39E49AE6FD1CDA1887A /* RichEditorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RichEditorView-dummy.m"; sourceTree = "<group>"; };
-		C9146EBE969F92570F7C454CB8EAC29B /* Pods-RichEditorViewSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RichEditorViewSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		CACE73B4F50D2713D5D67BA40AE7ABCE /* RichEditorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RichEditorView.xcconfig; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD2D76AA52B0CEECB7CC0FD2BD3A1031 /* Pods-RichEditorViewSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RichEditorViewSample-dummy.m"; sourceTree = "<group>"; };
-		EC1C3CF366594D395B8AE0F107A12568 /* Pods-RichEditorViewSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RichEditorViewSample-resources.sh"; sourceTree = "<group>"; };
-		EDF940A98392AFFE8D547FE96426589E /* RichEditorOptionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RichEditorOptionItem.swift; sourceTree = "<group>"; };
-		F3D02F37081A9CE9748C6887B5051585 /* assert.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; path = assert.js; sourceTree = "<group>"; };
-		F7D6966C9318E4C7C1E71356BDC0B56D /* RichEditorToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RichEditorToolbar.swift; sourceTree = "<group>"; };
-		F8910D2FA31D5348BBB9575F2BCA4DEA /* Pods-RichEditorViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RichEditorViewSample.debug.xcconfig"; sourceTree = "<group>"; };
-		F9438F93E36EE7C41FD690F3973D4A5F /* rich_editor_tests.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; path = rich_editor_tests.js; sourceTree = "<group>"; };
-		FA7C875B0191FF2A3D53DB192A1702E0 /* Pods-RichEditorViewSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RichEditorViewSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		00A5E5A68B1E86FB40716498DBD4CB75 /* rich_editor_tests.js */ = {isa = PBXFileReference; includeInIndex = 1; path = rich_editor_tests.js; sourceTree = "<group>"; };
+		05C303ED2FFE7B149D637E240F4D0398 /* Pods-RichEditorViewSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RichEditorViewSample.modulemap"; sourceTree = "<group>"; };
+		0622620F51CE7D92DDC3CF63B7A4D89A /* Pods-RichEditorViewSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RichEditorViewSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09AD5A8E59A5A06DBA2E912F691E8994 /* bold@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "bold@2x.png"; sourceTree = "<group>"; };
+		09E2AE3D8BC1C3D922C8290B078BC8AD /* subscript@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "subscript@2x.png"; sourceTree = "<group>"; };
+		1396077DF956F7350406E44B2FFBEC1A /* insert_link@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "insert_link@2x.png"; sourceTree = "<group>"; };
+		18A8A5EC271AEC1E49F930F77D85A249 /* Pods_RichEditorViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RichEditorViewSample.framework; path = "Pods-RichEditorViewSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEEA4688C5BF70BA78102C6E848301F /* rich_editor.js */ = {isa = PBXFileReference; includeInIndex = 1; path = rich_editor.js; sourceTree = "<group>"; };
+		1CB3CB7BFAF492597B730D7F606325FB /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		217D8B1CBAADCC3258FE5A59B0E20BA7 /* RichEditorOptionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichEditorOptionItem.swift; path = RichEditorView/Classes/RichEditorOptionItem.swift; sourceTree = "<group>"; };
+		2397A9649EC66EAE98D284D9BCB4FC2A /* insert_image@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "insert_image@2x.png"; sourceTree = "<group>"; };
+		2D48EDFEFF016D557BF84A5F3FAB0D9E /* RichEditorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RichEditorView.modulemap; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		363E67554CE82117C5AF9E801D936308 /* RichEditorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RichEditorView-prefix.pch"; sourceTree = "<group>"; };
+		3E8A478AB6C7FAF56C8DD155B62CF268 /* undo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "undo@3x.png"; sourceTree = "<group>"; };
+		3F2DBB2E25B89085B7A0894757386BB9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4210CF713B5BB929C7015ECB7612118D /* h6@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "h6@2x.png"; sourceTree = "<group>"; };
+		43A198E9FF758D0E23B55EF874F45993 /* h2@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "h2@2x.png"; sourceTree = "<group>"; };
+		49374559BAC327284DF3802C957DD853 /* RichEditorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RichEditorView.debug.xcconfig; sourceTree = "<group>"; };
+		49851E6AAEC64FE24E7126541FD9F73D /* italic@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "italic@2x.png"; sourceTree = "<group>"; };
+		4C97B78A44E7D95256DA443EA202A62C /* superscript@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "superscript@2x.png"; sourceTree = "<group>"; };
+		4DD6BD21BD7DDC5C2FFE0EA2327BE516 /* Pods-RichEditorViewSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RichEditorViewSample-Info.plist"; sourceTree = "<group>"; };
+		4F368E4A7B98A0A1DED8860ED28AE9AD /* indent@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "indent@2x.png"; sourceTree = "<group>"; };
+		554E8C3D767502D2931BCCADA062A453 /* ordered_list@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ordered_list@3x.png"; sourceTree = "<group>"; };
+		56EC8BDD99F9CFB3F5AD56083735533E /* jquery-3.4.1.min.js */ = {isa = PBXFileReference; includeInIndex = 1; path = "jquery-3.4.1.min.js"; sourceTree = "<group>"; };
+		5C7AC815F6255F6CB6066F33F6C6957C /* Pods-RichEditorViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RichEditorViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		646C8743306C4559E0829D66DB6027A0 /* Pods-RichEditorViewSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RichEditorViewSample-dummy.m"; sourceTree = "<group>"; };
+		653F86C27885272C393737519D648E56 /* Pods-RichEditorViewSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RichEditorViewSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		677A70F3EA183F48FCA432002B4A90EC /* outdent@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "outdent@3x.png"; sourceTree = "<group>"; };
+		6965B897A8BA0AC836C4C89FC0CEEBCA /* justify_left@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "justify_left@2x.png"; sourceTree = "<group>"; };
+		6C614A86A3A063D255C141F4DF9D8809 /* RichEditorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RichEditorView.framework; path = RichEditorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1402503CB776ED0FE866BA75BBA67B /* RichEditorWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichEditorWebView.swift; path = RichEditorView/Classes/RichEditorWebView.swift; sourceTree = "<group>"; };
+		743990123A5BE6FD65196E8B909DC0A0 /* rich_editor_tests.html */ = {isa = PBXFileReference; includeInIndex = 1; path = rich_editor_tests.html; sourceTree = "<group>"; };
+		7C13D60A0263F3E987554658B6F08F32 /* RichEditorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RichEditorView.release.xcconfig; sourceTree = "<group>"; };
+		8778D85BD1E4F4FB53267000F726C878 /* RichEditorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RichEditorView-umbrella.h"; sourceTree = "<group>"; };
+		8828FAC9F3B8AB4A9F7440032B371DC2 /* italic@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "italic@3x.png"; sourceTree = "<group>"; };
+		89F391EABECB914614E0A4A3DDBFD1BA /* text_color@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "text_color@2x.png"; sourceTree = "<group>"; };
+		8F2AC9AAE14B4B17DFF5F33CC17FF3D4 /* h1@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "h1@2x.png"; sourceTree = "<group>"; };
+		8FCCEFA2ADBB3BBF682D535397CEF900 /* strikethrough@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "strikethrough@2x.png"; sourceTree = "<group>"; };
+		9240E9483D0D2C79B1BEEFC4635969EF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "RichEditorView/Classes/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		963C6804A37CBEB7F401EB9F207E1B46 /* h3@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "h3@2x.png"; sourceTree = "<group>"; };
+		97BDA438BADB341EBC5F43CB0DB3B680 /* unordered_list@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "unordered_list@2x.png"; sourceTree = "<group>"; };
+		9D76C3E9B9BFFAB2C57A844FA9827497 /* h4@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "h4@2x.png"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E170EB3A87FE4B87669140ABB8C4D95 /* bg_color@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "bg_color@2x.png"; sourceTree = "<group>"; };
+		9F256A237F3FC1955ABCFD10481867FD /* ordered_list@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ordered_list@2x.png"; sourceTree = "<group>"; };
+		A19DC18C6D9953EED3AA7F6B835677B0 /* Pods-RichEditorViewSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RichEditorViewSample-umbrella.h"; sourceTree = "<group>"; };
+		AA0E80F178B15DD0C611FB2DDDA654A1 /* bold@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "bold@3x.png"; sourceTree = "<group>"; };
+		AB601F5D46BE51AEFF2DE67E52D86EC3 /* clear@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		AD6EAE5F45396C520DF2B3B348CA9565 /* redo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "redo@3x.png"; sourceTree = "<group>"; };
+		AEE97BCA56366F1F38CB9FC409AAE713 /* outdent@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "outdent@2x.png"; sourceTree = "<group>"; };
+		B17CA238F5E8DEFE009FEF25A0C7ED29 /* RichEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichEditorView.swift; path = RichEditorView/Classes/RichEditorView.swift; sourceTree = "<group>"; };
+		B3B728EC3ACEF87AB56A446C7A9DC189 /* unordered_list@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "unordered_list@3x.png"; sourceTree = "<group>"; };
+		B9450C0B269E8296D2FE2EB4D28D50F5 /* undo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "undo@2x.png"; sourceTree = "<group>"; };
+		BBFA39FC558A8863856BAA239FC204A2 /* Pods-RichEditorViewSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RichEditorViewSample-frameworks.sh"; sourceTree = "<group>"; };
+		C4047681C767292FB9629733F63DDCE6 /* normalize.css */ = {isa = PBXFileReference; includeInIndex = 1; path = normalize.css; sourceTree = "<group>"; };
+		C5774BEFD01036D9DE0A2706276C950A /* rich_editor.html */ = {isa = PBXFileReference; includeInIndex = 1; path = rich_editor.html; sourceTree = "<group>"; };
+		CAC2E4E4F237188579954A03E8F38338 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "RichEditorView/Classes/String+Extensions.swift"; sourceTree = "<group>"; };
+		CDE31D22D2C383E8BBED145CF2E3F5C7 /* underline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "underline@3x.png"; sourceTree = "<group>"; };
+		D2B9BCE89C1AFF469C8D3883DC1090D8 /* style.css */ = {isa = PBXFileReference; includeInIndex = 1; path = style.css; sourceTree = "<group>"; };
+		D329CAD429DA61BBC6938B55AE4168DA /* underline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "underline@2x.png"; sourceTree = "<group>"; };
+		D40F8BBDDEE7E09B32712564493BB258 /* indent@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "indent@3x.png"; sourceTree = "<group>"; };
+		D6E9FE596E1DDDBDFD2D9EC7D7A00BAD /* h5@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "h5@2x.png"; sourceTree = "<group>"; };
+		DD0A63FCAFEADDFB394E0E659E792DDD /* assert.js */ = {isa = PBXFileReference; includeInIndex = 1; path = assert.js; sourceTree = "<group>"; };
+		DEBFFEB4FE2517D62927CFBE219CE5F7 /* Pods-RichEditorViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RichEditorViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		DF5A20F0756F583D3DBC91DA786177EF /* redo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "redo@2x.png"; sourceTree = "<group>"; };
+		E1340FE0D8BE00C5EC515B7FC6FE2C6F /* justify_center@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "justify_center@2x.png"; sourceTree = "<group>"; };
+		E1876E3DF9278DF90BB173A1DAEC5E82 /* RichEditorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RichEditorView-dummy.m"; sourceTree = "<group>"; };
+		E786561A8631B2592FDD3E0A41634631 /* RichEditorToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichEditorToolbar.swift; path = RichEditorView/Classes/RichEditorToolbar.swift; sourceTree = "<group>"; };
+		EB5C55D36CBCDD51164AAFF967C35B32 /* RichEditorView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RichEditorView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EBB6A4F1910D1F96C4BDA947AAB8BC08 /* RichEditorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RichEditorView-Info.plist"; sourceTree = "<group>"; };
+		F38579B67EBDB349E1541AB6903F2890 /* justify_right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "justify_right@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2DC1E50BB355FFBF8878F8F393C78B17 /* Frameworks */ = {
+		4E000A9DF3DF9C396C03B8600CD58A17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6803119154B5721FC180F370AEBF8E6 /* Foundation.framework in Frameworks */,
+				80C5ADE6C4F6B4D95F9777AC620C0797 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66EDF3F6EBB5A135910E1ADA12A30C6B /* Frameworks */ = {
+		D9A4211F6A55990C97D31D94A6A19C40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E2A31D811C5E258A648D645F64119B /* Foundation.framework in Frameworks */,
+				6869A8EF9F940FFEE301408695939CF1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16F4C9903EFDD14F77C3E720FB54034D /* Products */ = {
+		01B854D300AEDC32304AE325846745E0 /* RichEditorView */ = {
 			isa = PBXGroup;
 			children = (
-				1271E747F5D9EEB8266B0E0F0D8285E6 /* Pods_RichEditorViewSample.framework */,
-				4C10094719178C91E5D2BD8A5D180278 /* RichEditorView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1A8014E622EE279B007F4972 /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				1A80152622EE279B007F4972 /* bg_color@2x.png */,
-				1A80151222EE279B007F4972 /* bold@2x.png */,
-				1A80152522EE279B007F4972 /* bold@3x.png */,
-				1A80151622EE279B007F4972 /* clear@2x.png */,
-				1A80150922EE279B007F4972 /* h1@2x.png */,
-				1A8014E722EE279B007F4972 /* h2@2x.png */,
-				1A80150622EE279B007F4972 /* h3@2x.png */,
-				1A8014F722EE279B007F4972 /* h4@2x.png */,
-				1A80151522EE279B007F4972 /* h5@2x.png */,
-				1A8014F922EE279B007F4972 /* h6@2x.png */,
-				1A8014F022EE279B007F4972 /* indent@2x.png */,
-				1A8014EC22EE279B007F4972 /* indent@3x.png */,
-				1A80151F22EE279B007F4972 /* insert_image@2x.png */,
-				1A80151122EE279B007F4972 /* insert_link@2x.png */,
-				1A80151322EE279B007F4972 /* italic@2x.png */,
-				1A80152422EE279B007F4972 /* italic@3x.png */,
-				1A8014F122EE279B007F4972 /* justify_center@2x.png */,
-				1A80152322EE279B007F4972 /* justify_left@2x.png */,
-				1A8014FA22EE279B007F4972 /* justify_right@2x.png */,
-				1A8014F322EE279B007F4972 /* ordered_list@2x.png */,
-				1A8014FD22EE279B007F4972 /* ordered_list@3x.png */,
-				1A80150022EE279B007F4972 /* outdent@2x.png */,
-				1A80150F22EE279B007F4972 /* outdent@3x.png */,
-				1A80151922EE279B007F4972 /* redo@2x.png */,
-				1A80151D22EE279B007F4972 /* redo@3x.png */,
-				1A80150422EE279B007F4972 /* strikethrough@2x.png */,
-				1A80151722EE279B007F4972 /* subscript@2x.png */,
-				1A80150122EE279B007F4972 /* superscript@2x.png */,
-				1A8014E922EE279B007F4972 /* text_color@2x.png */,
-				1A8014F522EE279B007F4972 /* underline@2x.png */,
-				1A8014FC22EE279B007F4972 /* underline@3x.png */,
-				1A80150822EE279B007F4972 /* undo@2x.png */,
-				1A80150522EE279B007F4972 /* undo@3x.png */,
-				1A8014EF22EE279B007F4972 /* unordered_list@2x.png */,
-				1A8014ED22EE279B007F4972 /* unordered_list@3x.png */,
-			);
-			path = icons;
-			sourceTree = "<group>";
-		};
-		2CC94A5F7929E2F2E1DB8A7836ED3708 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5694F78AD9912A077A0AF4371488370D /* Pods-RichEditorViewSample */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		362BE98CD04C1039ED626131CE2CB9D2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				503B0ABD7C7194C1ACAD37E972CEBCC7 /* Info.plist */,
-				685BFF7DBF86353957CA0455A32ED344 /* RichEditorView.modulemap */,
-				CACE73B4F50D2713D5D67BA40AE7ABCE /* RichEditorView.xcconfig */,
-				C413BE092D5FF39E49AE6FD1CDA1887A /* RichEditorView-dummy.m */,
-				A47AE720DEE71EF39FFF2F9A1B82195F /* RichEditorView-prefix.pch */,
-				9824AD75466EA117C9BB4360D617E673 /* RichEditorView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "RichEditorViewSample/Pods/Target Support Files/RichEditorView";
-			sourceTree = "<group>";
-		};
-		4B30F62D3E920B72423BDCEFAC746A24 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				964BA976808FD142A7EDD665CCFA7A79 /* RichEditorView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4BB4F8668983E243DD0DB22E90F5847C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EDF940A98392AFFE8D547FE96426589E /* RichEditorOptionItem.swift */,
-				F7D6966C9318E4C7C1E71356BDC0B56D /* RichEditorToolbar.swift */,
-				A962438433603F37F4226134FB32AD85 /* RichEditorView.swift */,
-				1A33A5AC233198A2001CE62D /* String+Extensions.swift */,
-				1A33A5AD233198A2001CE62D /* UIColor+Extensions.swift */,
-				1AB6F5832332E2AF006B3B5A /* RichEditorWebView.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		5315D93BDEF58B12C6B5250F606277ED /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				1A8014E622EE279B007F4972 /* icons */,
-				EB4C8C497E1562E215C93C320AA162CD /* editor */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		5694F78AD9912A077A0AF4371488370D /* Pods-RichEditorViewSample */ = {
-			isa = PBXGroup;
-			children = (
-				80ED049A146E6C22954326F460DC4553 /* Info.plist */,
-				14E29C85382435C544E1049690507DA2 /* Pods-RichEditorViewSample.modulemap */,
-				FA7C875B0191FF2A3D53DB192A1702E0 /* Pods-RichEditorViewSample-acknowledgements.markdown */,
-				C9146EBE969F92570F7C454CB8EAC29B /* Pods-RichEditorViewSample-acknowledgements.plist */,
-				CD2D76AA52B0CEECB7CC0FD2BD3A1031 /* Pods-RichEditorViewSample-dummy.m */,
-				4B2D2A1D90EF5849022855FEE8A8621A /* Pods-RichEditorViewSample-frameworks.sh */,
-				EC1C3CF366594D395B8AE0F107A12568 /* Pods-RichEditorViewSample-resources.sh */,
-				7980878382C0AB691C47F03DA0538E4D /* Pods-RichEditorViewSample-umbrella.h */,
-				F8910D2FA31D5348BBB9575F2BCA4DEA /* Pods-RichEditorViewSample.debug.xcconfig */,
-				13C70F08F9A188217D25A786931C6B4F /* Pods-RichEditorViewSample.release.xcconfig */,
-			);
-			name = "Pods-RichEditorViewSample";
-			path = "Target Support Files/Pods-RichEditorViewSample";
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				4B30F62D3E920B72423BDCEFAC746A24 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				16F4C9903EFDD14F77C3E720FB54034D /* Products */,
-				2CC94A5F7929E2F2E1DB8A7836ED3708 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8F5F944301B2DD5A30965A272BB0C4BA /* RichEditorView */ = {
-			isa = PBXGroup;
-			children = (
-				5315D93BDEF58B12C6B5250F606277ED /* Assets */,
-			);
-			path = RichEditorView;
-			sourceTree = "<group>";
-		};
-		964BA976808FD142A7EDD665CCFA7A79 /* RichEditorView */ = {
-			isa = PBXGroup;
-			children = (
-				BBE5CCF6270EE86EACCC5AD6DA84AA71 /* Resources */,
-				A5651CA34B4C7164DADA3643F0A55F9A /* RichEditorView */,
-				362BE98CD04C1039ED626131CE2CB9D2 /* Support Files */,
+				217D8B1CBAADCC3258FE5A59B0E20BA7 /* RichEditorOptionItem.swift */,
+				E786561A8631B2592FDD3E0A41634631 /* RichEditorToolbar.swift */,
+				B17CA238F5E8DEFE009FEF25A0C7ED29 /* RichEditorView.swift */,
+				6D1402503CB776ED0FE866BA75BBA67B /* RichEditorWebView.swift */,
+				CAC2E4E4F237188579954A03E8F38338 /* String+Extensions.swift */,
+				9240E9483D0D2C79B1BEEFC4635969EF /* UIColor+Extensions.swift */,
+				5BA94F2D678575FDE97C24E7486E7E59 /* Pod */,
+				57A971DEACEE219E3F051A502E01EAED /* Resources */,
+				6E33A5335EF740726410F96159DB0ADD /* Support Files */,
 			);
 			name = RichEditorView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		A5651CA34B4C7164DADA3643F0A55F9A /* RichEditorView */ = {
+		2A123AFF9DFAADC10356E558A0C1E279 /* editor */ = {
 			isa = PBXGroup;
 			children = (
-				4BB4F8668983E243DD0DB22E90F5847C /* Classes */,
+				DD0A63FCAFEADDFB394E0E659E792DDD /* assert.js */,
+				56EC8BDD99F9CFB3F5AD56083735533E /* jquery-3.4.1.min.js */,
+				C4047681C767292FB9629733F63DDCE6 /* normalize.css */,
+				C5774BEFD01036D9DE0A2706276C950A /* rich_editor.html */,
+				1AEEA4688C5BF70BA78102C6E848301F /* rich_editor.js */,
+				743990123A5BE6FD65196E8B909DC0A0 /* rich_editor_tests.html */,
+				00A5E5A68B1E86FB40716498DBD4CB75 /* rich_editor_tests.js */,
+				D2B9BCE89C1AFF469C8D3883DC1090D8 /* style.css */,
 			);
-			path = RichEditorView;
+			name = editor;
+			path = RichEditorView/Assets/editor;
 			sourceTree = "<group>";
 		};
-		BBE5CCF6270EE86EACCC5AD6DA84AA71 /* Resources */ = {
+		57A971DEACEE219E3F051A502E01EAED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8F5F944301B2DD5A30965A272BB0C4BA /* RichEditorView */,
+				2A123AFF9DFAADC10356E558A0C1E279 /* editor */,
+				F2F2B774AC60922893A8B150F4A5570C /* icons */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		58D8717819B7304A8665E34A00713C25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				18A8A5EC271AEC1E49F930F77D85A249 /* Pods_RichEditorViewSample.framework */,
+				6C614A86A3A063D255C141F4DF9D8809 /* RichEditorView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BA94F2D678575FDE97C24E7486E7E59 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1CB3CB7BFAF492597B730D7F606325FB /* LICENSE.md */,
+				3F2DBB2E25B89085B7A0894757386BB9 /* README.md */,
+				EB5C55D36CBCDD51164AAFF967C35B32 /* RichEditorView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6E33A5335EF740726410F96159DB0ADD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D48EDFEFF016D557BF84A5F3FAB0D9E /* RichEditorView.modulemap */,
+				E1876E3DF9278DF90BB173A1DAEC5E82 /* RichEditorView-dummy.m */,
+				EBB6A4F1910D1F96C4BDA947AAB8BC08 /* RichEditorView-Info.plist */,
+				363E67554CE82117C5AF9E801D936308 /* RichEditorView-prefix.pch */,
+				8778D85BD1E4F4FB53267000F726C878 /* RichEditorView-umbrella.h */,
+				49374559BAC327284DF3802C957DD853 /* RichEditorView.debug.xcconfig */,
+				7C13D60A0263F3E987554658B6F08F32 /* RichEditorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "RichEditorViewSample/Pods/Target Support Files/RichEditorView";
+			sourceTree = "<group>";
+		};
+		741073698130FE815C02F15B379D5D65 /* Pods-RichEditorViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				05C303ED2FFE7B149D637E240F4D0398 /* Pods-RichEditorViewSample.modulemap */,
+				0622620F51CE7D92DDC3CF63B7A4D89A /* Pods-RichEditorViewSample-acknowledgements.markdown */,
+				653F86C27885272C393737519D648E56 /* Pods-RichEditorViewSample-acknowledgements.plist */,
+				646C8743306C4559E0829D66DB6027A0 /* Pods-RichEditorViewSample-dummy.m */,
+				BBFA39FC558A8863856BAA239FC204A2 /* Pods-RichEditorViewSample-frameworks.sh */,
+				4DD6BD21BD7DDC5C2FFE0EA2327BE516 /* Pods-RichEditorViewSample-Info.plist */,
+				A19DC18C6D9953EED3AA7F6B835677B0 /* Pods-RichEditorViewSample-umbrella.h */,
+				5C7AC815F6255F6CB6066F33F6C6957C /* Pods-RichEditorViewSample.debug.xcconfig */,
+				DEBFFEB4FE2517D62927CFBE219CE5F7 /* Pods-RichEditorViewSample.release.xcconfig */,
+			);
+			name = "Pods-RichEditorViewSample";
+			path = "Target Support Files/Pods-RichEditorViewSample";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C2EDD82A9510CCE38081E4F880C41B13 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B854D300AEDC32304AE325846745E0 /* RichEditorView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C2EDD82A9510CCE38081E4F880C41B13 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				58D8717819B7304A8665E34A00713C25 /* Products */,
+				E3E0F13F6F3B99D2CE3FA4001E538CA4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB4C8C497E1562E215C93C320AA162CD /* editor */ = {
+		E3E0F13F6F3B99D2CE3FA4001E538CA4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3D02F37081A9CE9748C6887B5051585 /* assert.js */,
-				66DBAD0EAA771B04B515027F4AF5DE45 /* normalize.css */,
-				5BD5F71B6EB7B220E1E3091C6CF9AFA8 /* rich_editor.html */,
-				4E5A788970235FE88C7F22A294C6DE46 /* rich_editor.js */,
-				97D54D958A814B84BAD4939B8F572726 /* rich_editor_tests.html */,
-				F9438F93E36EE7C41FD690F3973D4A5F /* rich_editor_tests.js */,
-				6D422F2D59CE220D1E2262803C7EB6E3 /* style.css */,
+				741073698130FE815C02F15B379D5D65 /* Pods-RichEditorViewSample */,
 			);
-			path = editor;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F2F2B774AC60922893A8B150F4A5570C /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				9E170EB3A87FE4B87669140ABB8C4D95 /* bg_color@2x.png */,
+				09AD5A8E59A5A06DBA2E912F691E8994 /* bold@2x.png */,
+				AA0E80F178B15DD0C611FB2DDDA654A1 /* bold@3x.png */,
+				AB601F5D46BE51AEFF2DE67E52D86EC3 /* clear@2x.png */,
+				8F2AC9AAE14B4B17DFF5F33CC17FF3D4 /* h1@2x.png */,
+				43A198E9FF758D0E23B55EF874F45993 /* h2@2x.png */,
+				963C6804A37CBEB7F401EB9F207E1B46 /* h3@2x.png */,
+				9D76C3E9B9BFFAB2C57A844FA9827497 /* h4@2x.png */,
+				D6E9FE596E1DDDBDFD2D9EC7D7A00BAD /* h5@2x.png */,
+				4210CF713B5BB929C7015ECB7612118D /* h6@2x.png */,
+				4F368E4A7B98A0A1DED8860ED28AE9AD /* indent@2x.png */,
+				D40F8BBDDEE7E09B32712564493BB258 /* indent@3x.png */,
+				2397A9649EC66EAE98D284D9BCB4FC2A /* insert_image@2x.png */,
+				1396077DF956F7350406E44B2FFBEC1A /* insert_link@2x.png */,
+				49851E6AAEC64FE24E7126541FD9F73D /* italic@2x.png */,
+				8828FAC9F3B8AB4A9F7440032B371DC2 /* italic@3x.png */,
+				E1340FE0D8BE00C5EC515B7FC6FE2C6F /* justify_center@2x.png */,
+				6965B897A8BA0AC836C4C89FC0CEEBCA /* justify_left@2x.png */,
+				F38579B67EBDB349E1541AB6903F2890 /* justify_right@2x.png */,
+				9F256A237F3FC1955ABCFD10481867FD /* ordered_list@2x.png */,
+				554E8C3D767502D2931BCCADA062A453 /* ordered_list@3x.png */,
+				AEE97BCA56366F1F38CB9FC409AAE713 /* outdent@2x.png */,
+				677A70F3EA183F48FCA432002B4A90EC /* outdent@3x.png */,
+				DF5A20F0756F583D3DBC91DA786177EF /* redo@2x.png */,
+				AD6EAE5F45396C520DF2B3B348CA9565 /* redo@3x.png */,
+				8FCCEFA2ADBB3BBF682D535397CEF900 /* strikethrough@2x.png */,
+				09E2AE3D8BC1C3D922C8290B078BC8AD /* subscript@2x.png */,
+				4C97B78A44E7D95256DA443EA202A62C /* superscript@2x.png */,
+				89F391EABECB914614E0A4A3DDBFD1BA /* text_color@2x.png */,
+				D329CAD429DA61BBC6938B55AE4168DA /* underline@2x.png */,
+				CDE31D22D2C383E8BBED145CF2E3F5C7 /* underline@3x.png */,
+				B9450C0B269E8296D2FE2EB4D28D50F5 /* undo@2x.png */,
+				3E8A478AB6C7FAF56C8DD155B62CF268 /* undo@3x.png */,
+				97BDA438BADB341EBC5F43CB0DB3B680 /* unordered_list@2x.png */,
+				B3B728EC3ACEF87AB56A446C7A9DC189 /* unordered_list@3x.png */,
+			);
+			name = icons;
+			path = RichEditorView/Assets/icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4B31DFBDDEB250EFCC943F913B80421D /* Headers */ = {
+		2B39C68FFEA77744CC8713ED323AA842 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				339A87EF9A671044103479E863C9BCA4 /* Pods-RichEditorViewSample-umbrella.h in Headers */,
+				E6C1508F04C714C7CF7D88B8EE5F3F3F /* Pods-RichEditorViewSample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEB53EDE409E12A8BF5456A07E11C8C5 /* Headers */ = {
+		6CE22CD9F7ECE22B9C60CA61085C1C4A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697F6554216863B6A68300EB0D4B0967 /* RichEditorView-umbrella.h in Headers */,
+				2C02FBE30E5BB6CA6E8DD6B7483D227F /* RichEditorView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8BDB0C10741413EC14CF7F0426B77D37 /* Pods-RichEditorViewSample */ = {
+		737BA223DB1CCE508AF5096FB998C795 /* Pods-RichEditorViewSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CB3A6D24529701B1CB9BE27D42E32EF /* Build configuration list for PBXNativeTarget "Pods-RichEditorViewSample" */;
+			buildConfigurationList = 44E7CF421DFF80A249AE43E1CDDE1EA1 /* Build configuration list for PBXNativeTarget "Pods-RichEditorViewSample" */;
 			buildPhases = (
-				6E153DCC2C03BE8C71031AC71A54EE6B /* Sources */,
-				2DC1E50BB355FFBF8878F8F393C78B17 /* Frameworks */,
-				4B31DFBDDEB250EFCC943F913B80421D /* Headers */,
+				2B39C68FFEA77744CC8713ED323AA842 /* Headers */,
+				F49DF101B4FCBCA4CB5340EB84214E23 /* Sources */,
+				D9A4211F6A55990C97D31D94A6A19C40 /* Frameworks */,
+				23C524A8C79819CE41343B568C7F8340 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4FF378650214FE74DA831314FFE71D43 /* PBXTargetDependency */,
+				0103CB2EEF8DE46A417077D3E48349C8 /* PBXTargetDependency */,
 			);
 			name = "Pods-RichEditorViewSample";
 			productName = "Pods-RichEditorViewSample";
-			productReference = 1271E747F5D9EEB8266B0E0F0D8285E6 /* Pods_RichEditorViewSample.framework */;
+			productReference = 18A8A5EC271AEC1E49F930F77D85A249 /* Pods_RichEditorViewSample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		931355B053CE64160C15150C4B4AD823 /* RichEditorView */ = {
+		EE1675A9CD3D9AB59F10128C452292F9 /* RichEditorView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 564996C23EF448323419DCCEB1099F83 /* Build configuration list for PBXNativeTarget "RichEditorView" */;
+			buildConfigurationList = 16185A0F112FE2E647943AA9132608B5 /* Build configuration list for PBXNativeTarget "RichEditorView" */;
 			buildPhases = (
-				CD080057C675E818125954541A3B1518 /* Sources */,
-				66EDF3F6EBB5A135910E1ADA12A30C6B /* Frameworks */,
-				DEB53EDE409E12A8BF5456A07E11C8C5 /* Headers */,
-				ABF863E807CF7337C723DD721751D9C8 /* Resources */,
+				6CE22CD9F7ECE22B9C60CA61085C1C4A /* Headers */,
+				CA16E3B38A1B58E69E9D356BBCEB3404 /* Sources */,
+				4E000A9DF3DF9C396C03B8600CD58A17 /* Frameworks */,
+				0251A9130D570EB6E276D848085A0048 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -416,27 +404,19 @@
 			);
 			name = RichEditorView;
 			productName = RichEditorView;
-			productReference = 4C10094719178C91E5D2BD8A5D180278 /* RichEditorView.framework */;
+			productReference = 6C614A86A3A063D255C141F4DF9D8809 /* RichEditorView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					8BDB0C10741413EC14CF7F0426B77D37 = {
-						LastSwiftMigration = 0820;
-					};
-					931355B053CE64160C15150C4B4AD823 = {
-						LastSwiftMigration = 1100;
-					};
-				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -444,119 +424,130 @@
 				en,
 				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 16F4C9903EFDD14F77C3E720FB54034D /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 58D8717819B7304A8665E34A00713C25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BDB0C10741413EC14CF7F0426B77D37 /* Pods-RichEditorViewSample */,
-				931355B053CE64160C15150C4B4AD823 /* RichEditorView */,
+				737BA223DB1CCE508AF5096FB998C795 /* Pods-RichEditorViewSample */,
+				EE1675A9CD3D9AB59F10128C452292F9 /* RichEditorView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ABF863E807CF7337C723DD721751D9C8 /* Resources */ = {
+		0251A9130D570EB6E276D848085A0048 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A80152C22EE279B007F4972 /* indent@3x.png in Resources */,
-				1A80153922EE279B007F4972 /* h6@2x.png in Resources */,
-				1A80153022EE279B007F4972 /* indent@2x.png in Resources */,
-				1A80152722EE279B007F4972 /* h2@2x.png in Resources */,
-				1A80153D22EE279B007F4972 /* ordered_list@3x.png in Resources */,
-				1A80155122EE279B007F4972 /* insert_link@2x.png in Resources */,
-				1A80152922EE279B007F4972 /* text_color@2x.png in Resources */,
-				F6801716E905983548B8BBB30959734B /* assert.js in Resources */,
-				8D1F115DB33527DB48F603CCBCFAC455 /* normalize.css in Resources */,
-				1A80155622EE279B007F4972 /* clear@2x.png in Resources */,
-				1A80155322EE279B007F4972 /* italic@2x.png in Resources */,
-				1A80153522EE279B007F4972 /* underline@2x.png in Resources */,
-				1A80152F22EE279B007F4972 /* unordered_list@2x.png in Resources */,
-				B88913C5DC69852D045CF3EE8F082B2B /* rich_editor.html in Resources */,
-				1A80155922EE279B007F4972 /* redo@2x.png in Resources */,
-				1A80156322EE279B007F4972 /* justify_left@2x.png in Resources */,
-				1A80153122EE279B007F4972 /* justify_center@2x.png in Resources */,
-				1A80154822EE279B007F4972 /* undo@2x.png in Resources */,
-				23F68208CB1C9A9BE563BF2C8D08BADD /* rich_editor.js in Resources */,
-				1A80156522EE279B007F4972 /* bold@3x.png in Resources */,
-				1A80154922EE279B007F4972 /* h1@2x.png in Resources */,
-				1A80154022EE279B007F4972 /* outdent@2x.png in Resources */,
-				1A80153322EE279B007F4972 /* ordered_list@2x.png in Resources */,
-				1A80156422EE279B007F4972 /* italic@3x.png in Resources */,
-				1A80155F22EE279B007F4972 /* insert_image@2x.png in Resources */,
-				1A80153C22EE279B007F4972 /* underline@3x.png in Resources */,
-				16F181AB7A5C68DDA7DA92737A8CBFD7 /* rich_editor_tests.html in Resources */,
-				1A80154622EE279B007F4972 /* h3@2x.png in Resources */,
-				1A80155D22EE279B007F4972 /* redo@3x.png in Resources */,
-				1A80154122EE279B007F4972 /* superscript@2x.png in Resources */,
-				1A80153722EE279B007F4972 /* h4@2x.png in Resources */,
-				1A80156622EE279B007F4972 /* bg_color@2x.png in Resources */,
-				1A80152D22EE279B007F4972 /* unordered_list@3x.png in Resources */,
-				1A80155222EE279B007F4972 /* bold@2x.png in Resources */,
-				1A80154522EE279B007F4972 /* undo@3x.png in Resources */,
-				5E10E7887C89C8C74D8CC543CA49E94D /* rich_editor_tests.js in Resources */,
-				1A80154422EE279B007F4972 /* strikethrough@2x.png in Resources */,
-				9B30BD21D0DF4E26B0559D2C8BFE466D /* style.css in Resources */,
-				1A80155722EE279B007F4972 /* subscript@2x.png in Resources */,
-				1A80155522EE279B007F4972 /* h5@2x.png in Resources */,
-				1A80153A22EE279B007F4972 /* justify_right@2x.png in Resources */,
-				1A80154F22EE279B007F4972 /* outdent@3x.png in Resources */,
+				2746E5732C89CC6D259C80AFFF61131C /* assert.js in Resources */,
+				41CDD7DD9A7BFE37813B1DCE91034837 /* bg_color@2x.png in Resources */,
+				7514778F18EE109B9031C88245A4CE82 /* bold@2x.png in Resources */,
+				24CC1CE2661A42E5914835E3B35AAE00 /* bold@3x.png in Resources */,
+				56387873BB86A953570419A4200CF83B /* clear@2x.png in Resources */,
+				BDE6101B398E4DE514ECE9B0F08761E8 /* h1@2x.png in Resources */,
+				458D0F078DC61DA90CD90766ED46C5D9 /* h2@2x.png in Resources */,
+				E8E40A24AA65F1D655D2432710EFD5B0 /* h3@2x.png in Resources */,
+				DE6936CE57C8DE11883FE9B020C2778F /* h4@2x.png in Resources */,
+				71877F7B83AF7239D6C7A2B8E7F12AA5 /* h5@2x.png in Resources */,
+				462B6E360141450DFE9D7EB2A88682FA /* h6@2x.png in Resources */,
+				54C529229B8C775FFFB6EF271137524D /* indent@2x.png in Resources */,
+				476B68A6C5F97E804D1033BBC1C385CC /* indent@3x.png in Resources */,
+				A745EAD8EE29A1BAAB7B866A75813DE3 /* insert_image@2x.png in Resources */,
+				FA0C9D91B4A68803C6D932C00DDDC6A8 /* insert_link@2x.png in Resources */,
+				DEBB106DCCBD2E5D72B3B5FCC7164427 /* italic@2x.png in Resources */,
+				A80EC1B220E72ED4492779349BE8F75D /* italic@3x.png in Resources */,
+				99BC15A8FF4BCEC64D460B798683089F /* jquery-3.4.1.min.js in Resources */,
+				3CEACD5A8F22A692FC35E09B18C91AF0 /* justify_center@2x.png in Resources */,
+				B34747FA091F2ED6695D1FBC6EC3CFD7 /* justify_left@2x.png in Resources */,
+				8A5EDA5ADD70288C075C7243F8267089 /* justify_right@2x.png in Resources */,
+				CDF65093C3C7CD8A15A237AF547C33F0 /* normalize.css in Resources */,
+				6AC1267691191F682528A02D9CFCDFF5 /* ordered_list@2x.png in Resources */,
+				2B75989A59C23C16C3D6FD253B30FB7E /* ordered_list@3x.png in Resources */,
+				B12853913E0B64C249FC3C54D0944080 /* outdent@2x.png in Resources */,
+				4D6A16E5C4D7F55788F233E4FE4E2EFE /* outdent@3x.png in Resources */,
+				F667B6568D7D78EA3BA914D74F974442 /* redo@2x.png in Resources */,
+				CD396DE0E38A657BF2BB2FA7A8C0ABAF /* redo@3x.png in Resources */,
+				46D76164D56793A1A1D758AB2F7AF444 /* rich_editor.html in Resources */,
+				30400790E8CEF3B1E9D09B63E7BF52CA /* rich_editor.js in Resources */,
+				EDF05D89611F21BFC046B32B84B793D2 /* rich_editor_tests.html in Resources */,
+				2CACAF15CBC4A2EE352F608023ABA1C3 /* rich_editor_tests.js in Resources */,
+				8E97FB5A9C5EFD23E767A18ACD7D5EF6 /* strikethrough@2x.png in Resources */,
+				F74657554B649A9D3C8628FB6B7CB884 /* style.css in Resources */,
+				0AFF561A5D4CEA74A69D67A979C1BDB5 /* subscript@2x.png in Resources */,
+				A47703D0EB3C7134C30AB54F30D4FB1A /* superscript@2x.png in Resources */,
+				37D16100F3EB31687FF0867C6B786BCA /* text_color@2x.png in Resources */,
+				05B0422F58D214BE046EEEF4A2249EFA /* underline@2x.png in Resources */,
+				77AEBC7E09950A10A4292B45EDD43D74 /* underline@3x.png in Resources */,
+				C88A3CE89A6B174E0D37DDC08B35EED8 /* undo@2x.png in Resources */,
+				4B2D027D17C3E13310C1057A08CA389A /* undo@3x.png in Resources */,
+				790A124EC6539A9415956EC51949CF9C /* unordered_list@2x.png in Resources */,
+				8924EF4A33FD5061F68DF4E96F9B2E5C /* unordered_list@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C524A8C79819CE41343B568C7F8340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E153DCC2C03BE8C71031AC71A54EE6B /* Sources */ = {
+		CA16E3B38A1B58E69E9D356BBCEB3404 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1ABA61DE88300B7A44798DBBD683204 /* Pods-RichEditorViewSample-dummy.m in Sources */,
+				EE6D966307C1E93FEEA535C3A2D59E6D /* RichEditorOptionItem.swift in Sources */,
+				349480CDCCDCBA338A8B697F7670B17D /* RichEditorToolbar.swift in Sources */,
+				4506DBB859C39AD5BBD5DD7493D858A8 /* RichEditorView-dummy.m in Sources */,
+				56E9C15F3CD99427CC7C49878F20ECAD /* RichEditorView.swift in Sources */,
+				15E26EF4C5320B4EFF3EEF8D1F7860D2 /* RichEditorWebView.swift in Sources */,
+				C66B4F0780524DFAC9E3E7817A57B781 /* String+Extensions.swift in Sources */,
+				1A385BA37B0AC12EDEC4D46237513EFD /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD080057C675E818125954541A3B1518 /* Sources */ = {
+		F49DF101B4FCBCA4CB5340EB84214E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AB6F5842332E2AF006B3B5A /* RichEditorWebView.swift in Sources */,
-				37148EBAB00B766E4E8AB133C892DF9E /* RichEditorOptionItem.swift in Sources */,
-				DFDCC66FFB49038B4917D943688E99AB /* RichEditorToolbar.swift in Sources */,
-				12BEE72D3E6BB68CB8CE6A1D06EB890F /* RichEditorView-dummy.m in Sources */,
-				F82EB72A0BBBE1DB9AC3D63E700F06F4 /* RichEditorView.swift in Sources */,
-				1A33A5AF233198A2001CE62D /* UIColor+Extensions.swift in Sources */,
-				1A33A5AE233198A2001CE62D /* String+Extensions.swift in Sources */,
+				44652639BF737B8DF859836ABF5C5703 /* Pods-RichEditorViewSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4FF378650214FE74DA831314FFE71D43 /* PBXTargetDependency */ = {
+		0103CB2EEF8DE46A417077D3E48349C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RichEditorView;
-			target = 931355B053CE64160C15150C4B4AD823 /* RichEditorView */;
-			targetProxy = 9D7D135CF589DFF68FE0B7A528A80279 /* PBXContainerItemProxy */;
+			target = EE1675A9CD3D9AB59F10128C452292F9 /* RichEditorView */;
+			targetProxy = BACE1CB2B7DE2EB0A62CC24E65E677D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -564,17 +555,18 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -583,36 +575,144 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+		2656A83B75F25B8C4F0068709267B386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49374559BAC327284DF3802C957DD853 /* RichEditorView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RichEditorView/RichEditorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RichEditorView/RichEditorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RichEditorView/RichEditorView.modulemap";
+				PRODUCT_MODULE_NAME = RichEditorView;
+				PRODUCT_NAME = RichEditorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EED1CD3E4E24839284D127A97527A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEBFFEB4FE2517D62927CFBE219CE5F7 /* Pods-RichEditorViewSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RichEditorViewSample/Pods-RichEditorViewSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RichEditorViewSample/Pods-RichEditorViewSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E7F7FF168EA0C6C2D7F48953FA09346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7AC815F6255F6CB6066F33F6C6957C /* Pods-RichEditorViewSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RichEditorViewSample/Pods-RichEditorViewSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RichEditorViewSample/Pods-RichEditorViewSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -620,174 +720,69 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CFEECC8FF33C30D66FF720063A4DB422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C13D60A0263F3E987554658B6F08F32 /* RichEditorView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RichEditorView/RichEditorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RichEditorView/RichEditorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RichEditorView/RichEditorView.modulemap";
+				PRODUCT_MODULE_NAME = RichEditorView;
+				PRODUCT_NAME = RichEditorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5DA50680B07825347EC636C9317F9451 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CACE73B4F50D2713D5D67BA40AE7ABCE /* RichEditorView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 2;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RichEditorView/RichEditorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RichEditorView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 4.0;
-				MODULEMAP_FILE = "Target Support Files/RichEditorView/RichEditorView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RichEditorView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6A3C01B8F279EA22EA8A25245914AABA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8910D2FA31D5348BBB9575F2BCA4DEA /* Pods-RichEditorViewSample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RichEditorViewSample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RichEditorViewSample/Pods-RichEditorViewSample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RichEditorViewSample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D021749D6442F733101DCF74F133682C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13C70F08F9A188217D25A786931C6B4F /* Pods-RichEditorViewSample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RichEditorViewSample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RichEditorViewSample/Pods-RichEditorViewSample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RichEditorViewSample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F1FF8BE8FB6EDE3F1AD42872167D4C66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CACE73B4F50D2713D5D67BA40AE7ABCE /* RichEditorView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 2;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RichEditorView/RichEditorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RichEditorView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 4.0;
-				MODULEMAP_FILE = "Target Support Files/RichEditorView/RichEditorView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RichEditorView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -796,34 +791,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CB3A6D24529701B1CB9BE27D42E32EF /* Build configuration list for PBXNativeTarget "Pods-RichEditorViewSample" */ = {
+		16185A0F112FE2E647943AA9132608B5 /* Build configuration list for PBXNativeTarget "RichEditorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A3C01B8F279EA22EA8A25245914AABA /* Debug */,
-				D021749D6442F733101DCF74F133682C /* Release */,
+				2656A83B75F25B8C4F0068709267B386 /* Debug */,
+				CFEECC8FF33C30D66FF720063A4DB422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		44E7CF421DFF80A249AE43E1CDDE1EA1 /* Build configuration list for PBXNativeTarget "Pods-RichEditorViewSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
-				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+				8E7F7FF168EA0C6C2D7F48953FA09346 /* Debug */,
+				4EED1CD3E4E24839284D127A97527A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		564996C23EF448323419DCCEB1099F83 /* Build configuration list for PBXNativeTarget "RichEditorView" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DA50680B07825347EC636C9317F9451 /* Debug */,
-				F1FF8BE8FB6EDE3F1AD42872167D4C66 /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
