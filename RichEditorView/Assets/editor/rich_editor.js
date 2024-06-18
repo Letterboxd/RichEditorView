@@ -314,7 +314,15 @@ RE.insertLink = function(url, title) {
             }
         } else {
             if (url.length > 0) {
-                range.surroundContents(el);
+                if (range.startContainer === range.endContainer && range.startContainer.nodeType === Node.TEXT_NODE) {
+                    // If the range is within a single text node, surround it
+                    range.surroundContents(el);
+                } else {
+                    // Otherwise, extract the contents, wrap them, and insert back
+                    var docFragment = range.extractContents();
+                    el.appendChild(docFragment);
+                    range.insertNode(el);
+                }
                 sel.removeAllRanges();
                 sel.addRange(range);
             }
